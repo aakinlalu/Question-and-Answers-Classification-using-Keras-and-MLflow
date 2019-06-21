@@ -1,0 +1,14 @@
+artifact_uri: /Users/adebayoakinlalu/Jupyterdir/mlruns/0/ef6dbd8889b540a897df430fbd4bcc0a/artifacts
+end_time: 1559047697215
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_uuid: ef6dbd8889b540a897df430fbd4bcc0a
+source_name: /anaconda3/envs/DS_env/lib/python3.7/site-packages/ipykernel_launcher.py
+source_type: 4
+source_version: ''
+start_time: 1559047610921
+status: 3
+tags: []
+user_id: adebayoakinlalu

@@ -1,0 +1,12 @@
+name: zendesk_exercise
+channels:
+    - defaults
+dependencies:
+    - numpy==1.15.4
+    - pandas==0.23.4
+    - tensorflow==2.0.0a0
+    - matplotlib==3.0.2
+    - seaborn==0.9.0
+    - sklearn==0.0
+    - pip:
+        - mlflow

@@ -1,0 +1,11 @@
+name: zendesk_exercise
+
+conda_env: conda.yml
+
+entry_points:
+    main:
+        parameters:
+            embedding_dim: {type: int, default: 100}
+            epochs: {type: int, default: 20}
+            batch_size: {type: int, default: 10}
+        command: "python train.py {embedding_dim} {epochs} {batch_size}"
