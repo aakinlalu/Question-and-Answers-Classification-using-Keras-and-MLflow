@@ -1,15 +1,41 @@
 
+### QUESTION AND ANSWERS CLASSIFICATION USING Keras and MLFlow
+---
+
+Question-and-Answers-Classification-uing-Keras-and-MLflow/
+---
+                        |--src/
+                        |   |--feature_engineering.py  
+                        |   |
+                        |   |--data_processing.py
+                        |   |
+                        |   |--classifier.py/train.py  
+                        |   |
+                        |   |--data/
+                        |   |
+                        |   |--mlruns/            #--Model tracking
+                        |   |
+                        |   |--projects_file/     #--Model reproducible Package
+                        |          |--conda.yaml
+                        |          |--Mlproject
+                        |
+                        |--README.md
+                        |
+                        |--requirements.txt         #--Python Package
+                        |--solution.display
+
+---
 
 ```python
 !pwd
 ```
 
-    /Users/adebayoakinlalu/Jupyterdir/zendesk_exercise
+    /Question-and-Answers-Classification-uing-Keras-and-MLflow/
 
 
 
 ```python
-!head -n 2 zendesk*
+!head -n 2 data/dataset.csv*
 ```
 
     QuestionID	Question	DocumentID	DocumentTitle	SentenceID	Sentence	Label
@@ -60,7 +86,7 @@ for file in os.listdir(os.curdir):
 
 
 ```python
-df = pd.read_csv('zendesk_challenge (1) (1) (1) (2) (1) (1) (1).tsv', delimiter='\t',encoding='utf-8')
+df = pd.read_csv('data/dataset.tsv', delimiter='\t',encoding='utf-8')
 ```
 
 ### Priminary Analysis
