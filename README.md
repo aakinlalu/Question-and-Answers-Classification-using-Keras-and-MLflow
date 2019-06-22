@@ -1,9 +1,10 @@
 
 ### QUESTION AND ANSWERS CLASSIFICATION USING Keras and MLFlow
+Use Keras Mlflow to train questions and answers classification problems.
 ---
-Use Keras Mlflow to train questions and answers classification problems.  
 
-Question-and-Answers-Classification-uing-Keras-and-MLflow/
+Question-and-Answers-Classification-uing-Keras-and-MLflow/  
+---------------------------------------------------------
                         |--src/
                         |   |--feature_engineering.py  
                         |   |
