@@ -765,7 +765,7 @@ new_df[new_df['QuestionID']=='Q1']
 **Inference**:  
 The example above supports the assumption. However, it may not be through with every question in the dataset
 
-### Create a class for data processing -> zendesk_exercise/data_processing.py
+### Create a class for data processing -> data_processing.py
 
 
 ```python
@@ -877,7 +877,7 @@ if __name__ == '__main__':
 
 
 **Inference**:  
-The assumption can not be established since majority of the questions do not have right sentencse (Label 1). To continue the application, observations woth not correct sentences will be removed from the dataset
+The assumption can not be established since majority of the questions do not have right sentencse (Label 1). To continue the application, observations with no correct sentences will be removed from the dataset
 
 ##### Sample of new dataframe -- question_df
 
@@ -1013,7 +1013,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras import layers
 ```
 
-##### --> zendesk_exercise/feature_engineering.py
+##### --> feature_engineering.py
 
 
 ```python
@@ -1092,7 +1092,7 @@ class FeatureEngineering(DataProcessing):
         return new_text
 ```
 
-#### 2. Create model frame and embeeding Layer --> zendesk_exercise/classifer.py
+#### 2. Create model frame and embeeding Layer --> classifer.py
 The classifier will return probability score instead of binary
 
 
@@ -1140,7 +1140,7 @@ class QuestionAnswerClassifer:
 ```
 
 ### Model Prototype
-##### Model Tracking  --> zendesk_exercise/train.py
+##### Model Tracking  --> train.py
 mlflow allows prototyping of Ml model from training to deployment. It does three things:
 1. Model Tracking: The MLflow Tracking component is an API and UI for logging parameters, code versions, metrics, and output files when running your machine learning code and for later visualizing the results.
 2. Model Project: An MLflow Project is a format for packaging data science code in a reusable and reproducible way, based primarily on conventions.
@@ -1254,8 +1254,8 @@ Model performed very well with training data which it seems like overfitting. Th
 
 #### Model Project
 
-#### zendex_exercise/projects_file/Mlproject
-name: zendesk_exercise
+#### projects_file/Mlproject
+name: exercise
 
 conda_env: conda.yml
 
@@ -1265,9 +1265,9 @@ entry_points:
             embedding_dim: {type: int, default: 100}
         command: "python train.py {embedding_dim} {epochs} {batch_size}"
 
-#### zendex_exercise/projects_file/conda.yaml
+#### projects_file/conda.yaml
 
-name: zendesk_exercise
+name: exercise
 channels:
     - defaults
 dependencies:
@@ -1285,9 +1285,9 @@ I could have loved to build a web application that would present series of multi
 
 ### Guidelines follow  fron training to deployment  
 
-zendesk_exercise/
+exercise/
   |
-  |-- Zendesk_ML_exercise.ipynb
+  |-- ML_exercise.ipynb
   |
   |-- data_processing.py
   |
@@ -1312,9 +1312,9 @@ zendesk_exercise/
 
 **These must be done in terminal:**  
 
-**First step:**  Believe that zendesk_exercise directory resides in Home directory
+**First step:**  Believe that exercise directory resides in Home directory
 
-  cd ~/zendesk_exercise
+  cd ~/exercise
 
 **Second step:**
 
