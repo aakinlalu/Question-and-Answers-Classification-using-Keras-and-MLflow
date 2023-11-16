@@ -6,4 +6,4 @@ sklearn==0.0
 tensorflow==2.11.1
 tensorflow-datasets==1.0.1
 tensorflow-metadata==0.13.0
-mlflow==2.6.0
+mlflow==2.8.1
